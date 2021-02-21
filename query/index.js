@@ -34,6 +34,12 @@ const handleEvents = (type, data) => {
 };
 
 app.get('/posts', (req, res) => {
+    console.log('GET /posts : Debugging posts: ', posts);
+    res.send(posts);
+});
+
+app.get('/posts/getAll', (req, res) => {
+    console.log('GET /posts/getAll - Debugging posts: ', posts);
     res.send(posts);
 });
 

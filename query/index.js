@@ -38,11 +38,6 @@ app.get('/posts', (req, res) => {
     res.send(posts);
 });
 
-app.get('/posts/getAll', (req, res) => {
-    console.log('GET /posts/getAll - Debugging posts: ', posts);
-    res.send(posts);
-});
-
 app.post('/events', (req, res) => {
     console.log('Received Event', req.body.type);
 
